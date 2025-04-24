@@ -2,7 +2,7 @@ import org.junit.jupiter.api.*;
 
 
 
-public class SimpleJunitTest {
+public class  SimpleJunitTest {
     int result;
 
     @BeforeAll
