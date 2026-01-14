@@ -1,4 +1,4 @@
-import com.codeborne.selenide.Configuration;
+import  com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +13,7 @@ public class TextBoxTest {
      Configuration.baseUrl = "https://demoqa.com"; //вынесли базовый УРЛ
      Configuration.pageLoadStrategy = "eager"; //стратегия загрузки страницы
      //Configuration.holdBrowserOpen = true; // не закрывать страницу браузера
+     //Configuration.timeout = 5000;// default 4000
  }
 
     @Test
