@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add new practiceFormTest">
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="fix PF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" afterDir="false" />
     </list>
@@ -65,6 +65,9 @@
     &quot;accountId&quot;: &quot;56415cad-aa2c-41b9-a645-9189542aed8b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -214,12 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1768486356803</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix PF">
+      <option name="closed" value="true" />
+      <created>1768488634342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768488634342</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add css and xpath" />
     <MESSAGE value="add new practiceFormTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new practiceFormTest" />
+    <MESSAGE value="fix PF" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix PF" />
   </component>
 </project>
