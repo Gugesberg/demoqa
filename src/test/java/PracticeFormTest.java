@@ -35,6 +35,15 @@ public class PracticeFormTest {
         $(".custom-checkbox:nth-child(2) > .custom-control-label").click();
         //$("#uploadPicture").uploadFile(image);
         $("#currentAddress").setValue("Gareeva 102k2");
+        $(".css-19bqh2r").click();
+        $("#react-select-3-option-0").click();
+
+       // $(".css-1g6gooi").click();
+       // $("#react-select-3-option-0").click();
+       // $(".css-1gtu0rj-indicatorContainer > .css-19bqh2r").click();
+       // $("#react-select-4-option-0").click();
+
+
         $("#submit").click();
 
         $("tr:nth-child(1) > td:nth-child(2)").shouldHave(text("Alex Ivanov"));
@@ -42,8 +51,11 @@ public class PracticeFormTest {
         $("tr:nth-child(3) > td:nth-child(2)").shouldHave(text("Male"));
         $("tr:nth-child(4) > td:nth-child(2)").shouldHave(text("7927675913"));
         $("tr:nth-child(5) > td:nth-child(2)").shouldHave(text("13 January,2026"));
+       // $("tr:nth-child(6) > td:nth-child(2)").shouldHave(text("English"));
         $("tr:nth-child(7) > td:nth-child(2)").shouldHave(text("Sports, Reading"));
+       // $("tr:nth-child(8) > td:nth-child(2)").shouldHave(text("testImage.jpeg"));
         $("tr:nth-child(9) > td:nth-child(2)").shouldHave(text("Gareeva 102k2"));
+       // $("tr:nth-child(10) > td:nth-child(2)").shouldHave(text("NCR Delhi"));
 
 
     }

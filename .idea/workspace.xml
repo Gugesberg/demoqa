@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add css and xpath">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/files/testImage.jpeg" afterDir="false" />
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add new practiceFormTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,11 +206,20 @@
       <option name="project" value="LOCAL" />
       <updated>1768420223675</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add new practiceFormTest">
+      <option name="closed" value="true" />
+      <created>1768486356803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768486356803</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add css and xpath" />
-    <option name="LAST_COMMIT_MESSAGE" value="add css and xpath" />
+    <MESSAGE value="add new practiceFormTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new practiceFormTest" />
   </component>
 </project>
