@@ -21,10 +21,10 @@ public class Snippets {
         open("/", AuthenticationType.BASIC,
                 new BasicAuthCredentials("", "user", "password"));
 
-        Selenide.back();
-        Selenide.refresh();
+        Selenide.back(); // кнопка "Назад" в браузере
+        Selenide.refresh(); // кнопка "перезагрузить страницу" в браузере
 
-        Selenide.clearBrowserCookies();
+        Selenide.clearBrowserCookies(); // очищает все кукисы
         Selenide.clearBrowserLocalStorage();
         executeJavaScript("sessionStorage.clear();"); // no Selenide command for this yet
 
@@ -60,12 +60,12 @@ public class Snippets {
         $(byTagAndText("div", "full text"));
         $(withTagAndText("div", "ull text"));
 
-        $("").parent();
-        $("").sibling(1);
+        $("").parent(); // родительский элемент
+        $("").sibling(1); // дочерний элемент
         $("").preceding(1);
         $("").closest("div");
         $("").ancestor("div"); // the same as closest
-        $("div:last-child");
+        $("div:last-child"); // поиск последнего ребенка
 
         $("div").$("h1").find(byText("abc")).click();
         // very optional
@@ -82,12 +82,12 @@ public class Snippets {
     void actions_examples() {
         $("").click();
         $("").doubleClick();
-        $("").contextClick();
+        $("").contextClick(); // клик правой кнопкой мыши
 
-        $("").hover();
+        $("").hover(); // поднести мышку, но не нажимать
 
         $("").setValue("text");
-        $("").append("text");
+        $("").append("text"); // добавить текст к уже заполненному полю
         $("").clear();
         $("").setValue(""); // clear
 

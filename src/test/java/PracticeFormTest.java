@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
+import static com.codeborne.selenide.CollectionCondition.exactTexts;
+import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormTest {
     @BeforeAll
@@ -40,6 +41,12 @@ public class PracticeFormTest {
         $("#city").click();
         $("#react-select-4-option-0").click();
         $("#submit").click();
+
+/*
+        $$(".table table-dark table-striped table-bordered table-hover").shouldHave(exactTexts("Alex Ivanov",
+                "sasha19337@mail.ru", "Male","7927675913","13 January,2026","English","Sports, Reading",
+                "testImage.jpeg","Gareeva 102k2","NCR Delhi")); // todo : сделать проверку всех элементов внутри коллекции
+*/
         $("tr:nth-child(1) > td:nth-child(2)").shouldHave(text("Alex Ivanov"));
         $("tr:nth-child(2) > td:nth-child(2)").shouldHave(text("sasha19337@mail.ru"));
         $("tr:nth-child(3) > td:nth-child(2)").shouldHave(text("Male"));
@@ -50,7 +57,7 @@ public class PracticeFormTest {
         $("tr:nth-child(8) > td:nth-child(2)").shouldHave(text("testImage.jpeg"));
         $("tr:nth-child(9) > td:nth-child(2)").shouldHave(text("Gareeva 102k2"));
         $("tr:nth-child(10) > td:nth-child(2)").shouldHave(text("NCR Delhi"));
-
+*/
 
     }
 }
