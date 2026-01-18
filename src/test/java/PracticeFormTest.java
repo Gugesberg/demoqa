@@ -57,7 +57,7 @@ public class PracticeFormTest {
         $("tr:nth-child(8) > td:nth-child(2)").shouldHave(text("testImage.jpeg"));
         $("tr:nth-child(9) > td:nth-child(2)").shouldHave(text("Gareeva 102k2"));
         $("tr:nth-child(10) > td:nth-child(2)").shouldHave(text("NCR Delhi"));
-*/
+
 
     }
 }
