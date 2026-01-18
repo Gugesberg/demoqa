@@ -1,3 +1,5 @@
+package cssAndXPath;
+
 import static com.codeborne.selenide.Selectors.by;
 import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.$;

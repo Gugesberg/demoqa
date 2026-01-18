@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add to do (collection version of assert)" />
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="fix comment end">
+      <change afterPath="$PROJECT_DIR$/src/test/java/githubTests/SelenideRepositorySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CssXpathExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cssAndXPath/CssXpathExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqaTests/PracticeFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqaTests/TextBoxTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,30 +81,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PracticeFormTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PracticeFormTest.fillPracticeFormTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TextBoxTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.PracticeFormTest (1).executor": "Run",
+    "Gradle.PracticeFormTest.executor": "Run",
+    "Gradle.PracticeFormTest.fillPracticeFormTest.executor": "Run",
+    "Gradle.SelenideRepositorySearch.executor": "Run",
+    "Gradle.TextBoxTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources\files" />
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PracticeFormTest">
+  <component name="RunManager" selected="Gradle.BestContributorToSelenide">
+    <configuration name="BestContributorToSelenide" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;githubTests.BestContributorToSelenide&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PracticeFormTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;demoqaTests.PracticeFormTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="PracticeFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -122,7 +179,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PracticeFormTest.fillPracticeFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SelenideRepositorySearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +192,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PracticeFormTest.fillPracticeFormTest&quot;" />
+            <option value="&quot;githubTests.SelenideRepositorySearch&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,9 +240,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BestContributorToSelenide" />
+        <item itemvalue="Gradle.PracticeFormTest (1)" />
+        <item itemvalue="Gradle.SelenideRepositorySearch" />
         <item itemvalue="Gradle.PracticeFormTest" />
-        <item itemvalue="Gradle.TextBoxTest" />
-        <item itemvalue="Gradle.PracticeFormTest.fillPracticeFormTest" />
         <item itemvalue="Gradle.TextBoxTest" />
       </list>
     </recent_temporary>
@@ -239,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768736264351</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix comment end">
+      <option name="closed" value="true" />
+      <created>1768736353724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768736353724</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +325,8 @@
     <MESSAGE value="fix PF" />
     <MESSAGE value="add snippets" />
     <MESSAGE value="add to do (collection version of assert)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add to do (collection version of assert)" />
+    <MESSAGE value="fix comment end" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix comment end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

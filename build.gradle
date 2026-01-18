@@ -1,9 +1,13 @@
 plugins {
-    id 'java-library'
+    id 'java-library'  // устанавливаем язык проекта
 }
 
 repositories {
-    mavenCentral()
+    mavenCentral() //  хранилище библиотек для java
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
 }
 
 dependencies {
