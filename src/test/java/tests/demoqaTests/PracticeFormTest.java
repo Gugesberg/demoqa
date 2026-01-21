@@ -1,8 +1,9 @@
-package demoqaTests;
+package tests.demoqaTests;
 
 import  com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import com.microsoft.playwright.*;
 
 import java.io.File;
 
@@ -22,18 +23,23 @@ public class PracticeFormTest {
         Configuration.timeout = 10000;
     }
 
+    String firstName = "Alex";
+
     @Test
     void fillPracticeFormTest()
     {
         File image = new File("src/test/resources/files/testImage.jpeg");
         open("/automation-practice-form");
-        $("#firstName").setValue("Alex");
+        $("#firstName").setValue(firstName);
         $("#lastName").setValue("Ivanov");
         $("#userEmail").setValue("sasha19337@mail.ru");
-        $(".custom-radio:nth-child(1) > .custom-control-label").click();
+        $("#gender-radio-1").parent().click();
         $("#userNumber").setValue("7927675913");
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__day--013").click();
+        $(".react-datepicker__input-container").click();
+        $(".react-datepicker__month-select").selectOption("August");
+        $(".react-datepicker__year-select").selectOption("1994");
+        $(".react-datepicker__day--021").click();
         $("#subjectsInput").setValue("Eng").pressEnter();
         $(".custom-checkbox:nth-child(1) > .custom-control-label").click();
         $(".custom-checkbox:nth-child(2) > .custom-control-label").click();
@@ -45,6 +51,8 @@ public class PracticeFormTest {
         $("#react-select-4-option-0").click();
         $("#submit").click();
 
+
+
 /*
         $$(".table table-dark table-striped table-bordered table-hover").shouldHave(exactTexts("Alex Ivanov",
                 "sasha19337@mail.ru", "Male","7927675913","13 January,2026","English","Sports, Reading",
@@ -54,7 +62,7 @@ public class PracticeFormTest {
         $("tr:nth-child(2) > td:nth-child(2)").shouldHave(text("sasha19337@mail.ru"));
         $("tr:nth-child(3) > td:nth-child(2)").shouldHave(text("Male"));
         $("tr:nth-child(4) > td:nth-child(2)").shouldHave(text("7927675913"));
-        $("tr:nth-child(5) > td:nth-child(2)").shouldHave(text("13 January,2026"));
+        $("tr:nth-child(5) > td:nth-child(2)").shouldHave(text("21 August,1994"));
         $("tr:nth-child(6) > td:nth-child(2)").shouldHave(text("English"));
         $("tr:nth-child(7) > td:nth-child(2)").shouldHave(text("Sports, Reading"));
         $("tr:nth-child(8) > td:nth-child(2)").shouldHave(text("testImage.jpeg"));

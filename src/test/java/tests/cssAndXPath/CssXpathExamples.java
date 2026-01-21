@@ -1,4 +1,4 @@
-package cssAndXPath;
+package tests.cssAndXPath;
 
 import static com.codeborne.selenide.Selectors.by;
 import static com.codeborne.selenide.Selectors.byId;

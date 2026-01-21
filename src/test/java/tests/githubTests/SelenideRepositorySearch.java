@@ -1,10 +1,8 @@
-package githubTests;
+package tests.githubTests;
 
 import  com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import java.io.File;
 
 import static com.codeborne.selenide.CollectionCondition.exactTexts;
 import static com.codeborne.selenide.CollectionCondition.texts;
@@ -28,7 +26,7 @@ public class SelenideRepositorySearch {
         // открыть главную страницу
         open("https://github.com/");
         // ввести в поле поиска selenide и нажать enter
-        $("[placeholder='Search GitHub']").setValue("selenide").pressEnter();
+        $("[placeholder='Search GitHub']").setValue("tests").pressEnter();
         // кликнуть на первый репозиторий из списка найденых
         $$("ul.repo-list li").first().$("a").click();
         // проверка: заголовок selenide/selenide
