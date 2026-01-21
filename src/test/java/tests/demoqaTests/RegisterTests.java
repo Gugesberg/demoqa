@@ -9,15 +9,16 @@ import static pages.RegisterPage.relativeUrl;
 
 public class RegisterTests extends DemoqaBaseTest {
 
+    RegisterPage registerPage = new RegisterPage();
 
     @Test
-    void tryToRegisterWithoutCaptcha(){
+    void tryToRegisterWithoutCaptcha() {
         open(relativeUrl);
-        RegisterPage.setFirstName("Alex");
-        RegisterPage.setLastName("Ivanov");
-        RegisterPage.setUserName("Gugesberg");
-        RegisterPage.setPassword("12345");
-        RegisterPage.clickRegisterButton();
-        RegisterPage.checkUnfilledReCaptcha();
+        registerPage.setFirstName("Alex")
+                .setLastName("Ivanov")
+                .setUserName("Gugesberg")
+                .setPassword("12345")
+                .clickRegisterButton()
+                .checkUnfilledReCaptcha();
     }
 }

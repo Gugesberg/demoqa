@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add github tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/qa/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/DemoqaBaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/RegisterTests.java" afterDir="false" />
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SimpleJunitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/junit/SimpleJunitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cssAndXPath/CssXpathExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/cssAndXPath/CssXpathExamples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoqaTests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoqaTests/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/TextBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/githubTests/BestContributorToSelenide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/githubTests/BestContributorToSelenide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/githubTests/SelenideRepositorySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/githubTests/SelenideRepositorySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenide/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/selenide/Snippets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/RegisterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/RegisterTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +90,7 @@
     "Gradle.PracticeFormTest (1).executor": "Run",
     "Gradle.PracticeFormTest.executor": "Run",
     "Gradle.PracticeFormTest.fillPracticeFormTest.executor": "Run",
+    "Gradle.RegisterTests.executor": "Run",
     "Gradle.RegisterTests.tryToRegisterWithoutCaptcha.executor": "Run",
     "Gradle.RegistrationPageTests.executor": "Run",
     "Gradle.SelenideRepositorySearch.executor": "Run",
@@ -123,7 +114,7 @@
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegisterTests">
+  <component name="RunManager" selected="Gradle.RegisterTests.tryToRegisterWithoutCaptcha">
     <configuration name="LoginPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -257,8 +248,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegisterTests" />
         <item itemvalue="Gradle.RegisterTests.tryToRegisterWithoutCaptcha" />
+        <item itemvalue="Gradle.RegisterTests" />
         <item itemvalue="Gradle.LoginPageTests.authorizationWithNullPassword" />
         <item itemvalue="Gradle.LoginPageTests.authorizationWithNullLogin" />
         <item itemvalue="Gradle.LoginPageTests" />
@@ -330,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768744400960</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests">
+      <option name="closed" value="true" />
+      <created>1768999798423</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768999798423</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +351,8 @@
     <MESSAGE value="add to do (collection version of assert)" />
     <MESSAGE value="fix comment end" />
     <MESSAGE value="add github tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add github tests" />
+    <MESSAGE value="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

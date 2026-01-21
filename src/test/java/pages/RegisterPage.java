@@ -6,34 +6,41 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegisterPage {
-    public static SelenideElement firsNameLocator = $("#firstname");
-    public static SelenideElement lastNameLocator = $("#lastname");
-    public static SelenideElement userNameLocator = $("#userName");
-    public static SelenideElement passwordLocator = $("#password");
-    public static SelenideElement registerButton = $("#register");
-    public static SelenideElement backToLoginButton = $("#gotologin");
     public static String relativeUrl = "/register";
-    public static SelenideElement reCaptchaErrorMessage = $(".mb-1");
+    private SelenideElement firsNameLocator = $("#firstname"),
+                            lastNameLocator = $("#lastname"),
+                            userNameLocator = $("#userName"),
+                            passwordLocator = $("#password"),
+                            registerButton = $("#register"),
+                            backToLoginButton = $("#gotologin"),
+                            reCaptchaErrorMessage = $(".mb-1");
 
-    public static void setFirstName(String value){
+    public RegisterPage setFirstName(String value){
         firsNameLocator.setValue(value);
+        return this;
     }
-    public static void setLastName(String value){
+    public RegisterPage setLastName(String value){
         lastNameLocator.setValue(value);
+        return this;
     }
-    public static void setUserName(String value){
+    public RegisterPage setUserName(String value){
         userNameLocator.setValue(value);
+        return this;
     }
-    public static void setPassword(String value){
+    public RegisterPage setPassword(String value){
         passwordLocator.setValue(value);
+        return this;
     }
-    public static void clickRegisterButton(){
+    public RegisterPage clickRegisterButton(){
         registerButton.click();
+        return this;
     }
-    public static void clickBackToLoginButton(){
+    public RegisterPage clickBackToLoginButton(){
         backToLoginButton.click();
+        return this;
     }
-    public static void checkUnfilledReCaptcha(){
+    public RegisterPage checkUnfilledReCaptcha(){
         reCaptchaErrorMessage.shouldHave(text("Please verify reCaptcha to register!"));
+        return this;
     }
 }

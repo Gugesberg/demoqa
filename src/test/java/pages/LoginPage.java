@@ -6,37 +6,45 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
-       public static SelenideElement userNameLocator = $("#userName");
-       public static SelenideElement passwordLocator = $("#password");
-       public static SelenideElement loginButtonLocator = $("#login");
-       public static SelenideElement newUserButtonLocator = $("#newUser");
-       public static SelenideElement invalidUsernameOrPasswordMessage = $(".mb-1");
        public static String relativeUrl = "/login";
+       private SelenideElement userNameLocator = $("#userName"),
+                               passwordLocator = $("#password"),
+                               loginButtonLocator = $("#login"),
+                               newUserButtonLocator = $("#newUser"),
+                               invalidUsernameOrPasswordMessage = $(".mb-1");
 
 
-       public static void pushLoginButton(){
+
+       public LoginPage pushLoginButton(){
            loginButtonLocator.click();
+           return this;
 
        }
-       public static void pushNewUserButton(){
+       public LoginPage pushNewUserButton(){
            newUserButtonLocator.click();
+           return this;
 
        }
-       public static void setUserName(String value){
+       public LoginPage setUserName(String value){
            userNameLocator.setValue(value);
+           return this;
 
        }
-       public static void setPassword(String value){
+       public LoginPage setPassword(String value){
            passwordLocator.setValue(value);
+           return this;
        }
-       public static void checkFailedAuthorization() {
+       public LoginPage checkFailedAuthorization() {
            invalidUsernameOrPasswordMessage.shouldHave(text("Invalid username or password!"));
+           return this;
        }
-       public static void checkUnfilledUserName(){
+       public LoginPage checkUnfilledUserName(){
            userNameLocator.shouldHave(cssValue("border-color","rgb(220, 53, 69)"));
+           return this;
        }
-       public static void checkUnfilledPassword(){
+       public LoginPage checkUnfilledPassword(){
            passwordLocator.shouldHave(cssValue("border-color","rgb(220, 53, 69)"));
+           return this;
        }
 }
 
