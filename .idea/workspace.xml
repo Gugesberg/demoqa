@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests">
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PracticeFormPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/RegisterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/RegisterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,65 +78,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.BestContributorToSelenide.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.LoginPageTests.authorizationWithNullLogin.executor": "Run",
-    "Gradle.LoginPageTests.authorizationWithNullPassword.executor": "Run",
-    "Gradle.LoginPageTests.executor": "Run",
-    "Gradle.PracticeFormTest (1).executor": "Run",
-    "Gradle.PracticeFormTest.executor": "Run",
-    "Gradle.PracticeFormTest.fillPracticeFormTest.executor": "Run",
-    "Gradle.RegisterTests.executor": "Run",
-    "Gradle.RegisterTests.tryToRegisterWithoutCaptcha.executor": "Run",
-    "Gradle.RegistrationPageTests.executor": "Run",
-    "Gradle.SelenideRepositorySearch.executor": "Run",
-    "Gradle.TextBoxTest.executor": "Run",
-    "Gradle.demoqa [:Main.main()].executor": "Run",
-    "Gradle.demoqa [:guru.qa.Main.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.BestContributorToSelenide.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginPageTests.authorizationWithNullLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginPageTests.authorizationWithNullPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LoginPageTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTest.fillPracticeFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegisterTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegisterTests.tryToRegisterWithoutCaptcha.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RegistrationPageTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SelenideRepositorySearch.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TextBoxTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.demoqa [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.demoqa [:guru.qa.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources\files" />
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegisterTests.tryToRegisterWithoutCaptcha">
-    <configuration name="LoginPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.demoqaTests.LoginPageTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.PracticeFormTest">
     <configuration name="LoginPageTests.authorizationWithNullLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,6 +151,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.demoqaTests.LoginPageTests.authorizationWithNullPassword&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PracticeFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.demoqaTests.PracticeFormTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -235,24 +233,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="demoqa" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="demoqa" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PracticeFormTest" />
         <item itemvalue="Gradle.RegisterTests.tryToRegisterWithoutCaptcha" />
         <item itemvalue="Gradle.RegisterTests" />
         <item itemvalue="Gradle.LoginPageTests.authorizationWithNullPassword" />
         <item itemvalue="Gradle.LoginPageTests.authorizationWithNullLogin" />
-        <item itemvalue="Gradle.LoginPageTests" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768999798423</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1769005111222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1769005111222</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +347,8 @@
     <MESSAGE value="fix comment end" />
     <MESSAGE value="add github tests" />
     <MESSAGE value="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
