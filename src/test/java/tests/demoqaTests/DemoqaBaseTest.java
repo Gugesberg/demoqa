@@ -10,6 +10,6 @@ public class DemoqaBaseTest {
         Configuration.browserSize = "1920x1080"; //конфигурация окна браузера
         Configuration.baseUrl = "https://demoqa.com"; //вынесли базовый УРЛ
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        //Configuration.holdBrowserOpen = true;
     }
 }

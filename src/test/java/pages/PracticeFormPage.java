@@ -1,18 +1,15 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebElementCondition;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.getSelectedText;
-import static com.codeborne.selenide.files.DownloadActions.click;
+import static com.codeborne.selenide.Selenide.*;
+import static utils.RandomGender.getRandomGender;
 
 public class PracticeFormPage {
-    public static String relativeUrl = "/automation-practice-form";
     private SelenideElement firstNameLocator = $("#firstName"),
             lastNameLocator = $("#lastName"),
             userEmailLocator = $("#userEmail"),
@@ -24,6 +21,15 @@ public class PracticeFormPage {
             uploadPictureLocator = $("#uploadPicture"),
             currentAdressLocator = $("#currentAddress"),
             submitButtonLocator =  $("#submit");
+
+    public PracticeFormPage openPage() {
+        open("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
+
+        return this;
+    }
 
     public PracticeFormPage setFirstName(String value) {
         firstNameLocator.setValue(value);
@@ -40,9 +46,10 @@ public class PracticeFormPage {
         return this;
     }
 
-    public PracticeFormPage chooseGender(String value) {
-        genderLocator.$(byText(value)).click();
+    public PracticeFormPage chooseGender() {
+        genderLocator.$(byText(getRandomGender())).click();
         return this;
+
     }
 
     public PracticeFormPage setMobileNumber(String value) {
@@ -85,6 +92,11 @@ public class PracticeFormPage {
     }
     public PracticeFormPage clickSubmitButton() {
         submitButtonLocator.click();
+        return this;
+    }
+    public PracticeFormPage checkThanksForSubmittingModalIsOpen() {
+        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $("#closeLargeModal").click();
         return this;
     }
 
