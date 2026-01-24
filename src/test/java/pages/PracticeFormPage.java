@@ -1,13 +1,14 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import pages.components.CalendarComponent;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static utils.RandomGender.getRandomGender;
+import static utils.RandomData.*;
 
 public class PracticeFormPage {
     private SelenideElement firstNameLocator = $("#firstName"),
@@ -61,16 +62,16 @@ public class PracticeFormPage {
         uploadPictureLocator.uploadFile(file);
         return this;
     }
-    public PracticeFormPage setSubject(String value) {
-        subjectLocator.setValue(value).pressEnter();
+    public PracticeFormPage setSubject() {
+        subjectLocator.setValue(getRandomSubjects()).pressEnter();
         return this;
     }
     public PracticeFormPage setCurrentAdress(String value) {
         currentAdressLocator.setValue(value);
         return this;
     }
-    public PracticeFormPage chooseHobbie(String value) {
-        hobbieLocator.$(byText(value)).click();
+    public PracticeFormPage chooseHobbie() {
+        hobbieLocator.$(byText(getRandomHobbie())).click();
         return this;
     }
     public PracticeFormPage selectStateAndCity() {
@@ -78,16 +79,13 @@ public class PracticeFormPage {
         $("#react-select-3-option-0").click();
         $("#city").click();
         $("#react-select-4-option-0").click();
-        $("#submit").click();
 
         return this;
     }
     public PracticeFormPage choseDateOfBirth() {
+        CalendarComponent calendarComponent = new CalendarComponent();
         calendarLocator.click();
-        $(".react-datepicker__input-container").click();
-        $(".react-datepicker__month-select").selectOption("August");
-        $(".react-datepicker__year-select").selectOption("1994");
-        $(".react-datepicker__day--021").click();
+        calendarComponent.setDate(getRandomYear(),getRandomMonth(),getRandomDay());
         return this;
     }
     public PracticeFormPage clickSubmitButton() {

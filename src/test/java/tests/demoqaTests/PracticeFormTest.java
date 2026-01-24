@@ -8,6 +8,8 @@ import pages.PracticeFormPage;
 import java.io.File;
 import java.util.Locale;
 
+import static com.codeborne.selenide.Selenide.executeJavaScript;
+
 
 public class PracticeFormTest extends DemoqaBaseTest {
     PracticeFormPage practiceFormTestPage = new PracticeFormPage();
@@ -26,7 +28,6 @@ public class PracticeFormTest extends DemoqaBaseTest {
         currentAdress = faker.address().streetAddress();
         mobileNumber = faker.phoneNumber().subscriberNumber(10);
         email = faker.internet().emailAddress("en");
-       // gender = faker.options().option("Male","Female","Other");
     }
 
     @Test
@@ -40,13 +41,14 @@ public class PracticeFormTest extends DemoqaBaseTest {
                 .setEmail(email)
                 .chooseGender()
                 .setMobileNumber(mobileNumber)
-                .choseDateOfBirth().setSubject("Eng")
-                .chooseHobbie("Sports").chooseHobbie("Music")
+                .choseDateOfBirth()
+                .setSubject()
+                .chooseHobbie()
                 .uploadPicture(image)
                 .setCurrentAdress(currentAdress)
                 .selectStateAndCity()
-                .clickSubmitButton();
-                // .checkThanksForSubmittingModalIsOpen();
+                .clickSubmitButton()
+                .checkThanksForSubmittingModalIsOpen();
     }
 
 }
