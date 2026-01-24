@@ -15,7 +15,9 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.10.0", //JUnit5
             "com.codeborne:selenide:7.9.0", //Селенид
             "org.slf4j:slf4j-simple:2.0.7",  //логирование
-            'com.microsoft.playwright:playwright:1.54.0'
+            'com.microsoft.playwright:playwright:1.54.0',
+            'com.github.javafaker:javafaker:1.0.2',
+            'org.jsoup:jsoup:1.18.1'
 
     )
 }

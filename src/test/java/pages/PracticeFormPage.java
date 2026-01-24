@@ -1,18 +1,16 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebElementCondition;
+import pages.components.CalendarComponent;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.getSelectedText;
-import static com.codeborne.selenide.files.DownloadActions.click;
+import static com.codeborne.selenide.Selenide.*;
+import static utils.RandomData.*;
 
 public class PracticeFormPage {
-    public static String relativeUrl = "/automation-practice-form";
     private SelenideElement firstNameLocator = $("#firstName"),
             lastNameLocator = $("#lastName"),
             userEmailLocator = $("#userEmail"),
@@ -24,6 +22,15 @@ public class PracticeFormPage {
             uploadPictureLocator = $("#uploadPicture"),
             currentAdressLocator = $("#currentAddress"),
             submitButtonLocator =  $("#submit");
+
+    public PracticeFormPage openPage() {
+        open("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
+
+        return this;
+    }
 
     public PracticeFormPage setFirstName(String value) {
         firstNameLocator.setValue(value);
@@ -40,9 +47,10 @@ public class PracticeFormPage {
         return this;
     }
 
-    public PracticeFormPage chooseGender(String value) {
-        genderLocator.$(byText(value)).click();
+    public PracticeFormPage chooseGender() {
+        genderLocator.$(byText(getRandomGender())).click();
         return this;
+
     }
 
     public PracticeFormPage setMobileNumber(String value) {
@@ -54,16 +62,16 @@ public class PracticeFormPage {
         uploadPictureLocator.uploadFile(file);
         return this;
     }
-    public PracticeFormPage setSubject(String value) {
-        subjectLocator.setValue(value).pressEnter();
+    public PracticeFormPage setSubject() {
+        subjectLocator.setValue(getRandomSubjects()).pressEnter();
         return this;
     }
     public PracticeFormPage setCurrentAdress(String value) {
         currentAdressLocator.setValue(value);
         return this;
     }
-    public PracticeFormPage chooseHobbie(String value) {
-        hobbieLocator.$(byText(value)).click();
+    public PracticeFormPage chooseHobbie() {
+        hobbieLocator.$(byText(getRandomHobbie())).click();
         return this;
     }
     public PracticeFormPage selectStateAndCity() {
@@ -71,20 +79,22 @@ public class PracticeFormPage {
         $("#react-select-3-option-0").click();
         $("#city").click();
         $("#react-select-4-option-0").click();
-        $("#submit").click();
 
         return this;
     }
     public PracticeFormPage choseDateOfBirth() {
+        CalendarComponent calendarComponent = new CalendarComponent();
         calendarLocator.click();
-        $(".react-datepicker__input-container").click();
-        $(".react-datepicker__month-select").selectOption("August");
-        $(".react-datepicker__year-select").selectOption("1994");
-        $(".react-datepicker__day--021").click();
+        calendarComponent.setDate(getRandomYear(),getRandomMonth(),getRandomDay());
         return this;
     }
     public PracticeFormPage clickSubmitButton() {
         submitButtonLocator.click();
+        return this;
+    }
+    public PracticeFormPage checkThanksForSubmittingModalIsOpen() {
+        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $("#closeLargeModal").click();
         return this;
     }
 
