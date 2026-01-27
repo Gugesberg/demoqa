@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/qa/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/qa/javaEncyclopedia.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/qa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/qa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/DemoqaBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/DemoqaBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/RandomData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/RandomData.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="Аннотации jUnit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769265795006</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Аннотации jUnit">
+      <option name="closed" value="true" />
+      <created>1769534014809</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1769534014809</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,7 +358,8 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="add PracticeFormPage&#10;Refactor PracticeFormTest" />
     <MESSAGE value="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage" />
+    <MESSAGE value="Аннотации jUnit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Аннотации jUnit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
