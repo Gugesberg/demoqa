@@ -2,8 +2,10 @@ package tests.demoqaTests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 
 public class DemoqaBaseTest {
+    @DisplayName("Базовый тест для сайта demoqa")
     @BeforeAll
     static void baseTestConfiguration() {
         // Configuration.browser = "firefox";//выбор браузера

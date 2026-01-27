@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add PracticeFormPage&#10;Refactor PracticeFormTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/components/CalendarComponent.java" afterDir="false" />
+    <list default="true" id="b6036b6d-eab8-4661-b4f6-f40df1bd9efd" name="Changes" comment="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/qa/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/qa/javaEncyclopedia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PracticeFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/qa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/qa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/DemoqaBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/DemoqaBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoqaTests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/RandomGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/RandomData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/RandomData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/RandomData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +90,7 @@
     "Gradle.LoginPageTests.authorizationWithNullLogin.executor": "Run",
     "Gradle.LoginPageTests.authorizationWithNullPassword.executor": "Run",
     "Gradle.LoginPageTests.executor": "Run",
+    "Gradle.LoginTests.executor": "Run",
     "Gradle.PracticeFormTest (1).executor": "Run",
     "Gradle.PracticeFormTest.executor": "Run",
     "Gradle.PracticeFormTest.fillPracticeFormTest.executor": "Run",
@@ -116,7 +119,20 @@
       <recent name="C:\Users\79276\IdeaProjects\demoqa\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PracticeFormTest">
+  <component name="RunManager" selected="Gradle.LoginTests">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guru.qa.Main" />
+      <module name="demoqa.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guru.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RandomData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.RandomData" />
       <module name="demoqa.test" />
@@ -129,6 +145,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.demoqaTests.LoginTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="PracticeFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -178,61 +218,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegisterTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.demoqaTests.RegisterTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegisterTests.tryToRegisterWithoutCaptcha" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.demoqaTests.RegisterTests.tryToRegisterWithoutCaptcha&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PracticeFormTest" />
+        <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.PracticeFormTest.fillPracticeFormTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.PracticeFormTest" />
         <item itemvalue="Application.RandomData" />
-        <item itemvalue="Gradle.RegisterTests.tryToRegisterWithoutCaptcha" />
-        <item itemvalue="Gradle.RegisterTests" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769255863559</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage">
+      <option name="closed" value="true" />
+      <created>1769265795006</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769265795006</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,7 +358,8 @@
     <MESSAGE value="add RegisterPage and RegisterTests&#10;add LoginPage and LoginTests" />
     <MESSAGE value="refactor" />
     <MESSAGE value="add PracticeFormPage&#10;Refactor PracticeFormTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add PracticeFormPage&#10;Refactor PracticeFormTest" />
+    <MESSAGE value="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new methods in RandomData&#10;refactor PracticeFormTest and PracticeFormPage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

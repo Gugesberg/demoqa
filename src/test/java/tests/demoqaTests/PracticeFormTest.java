@@ -2,6 +2,7 @@ package tests.demoqaTests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.PracticeFormPage;
 
@@ -30,6 +31,7 @@ public class PracticeFormTest extends DemoqaBaseTest {
         email = faker.internet().emailAddress("en");
     }
 
+    @DisplayName("Проверка заполнения всех полей и нажатия на кнопку Submit")
     @Test
     void fillPracticeFormTest() {
 

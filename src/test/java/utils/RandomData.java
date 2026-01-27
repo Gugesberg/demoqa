@@ -1,5 +1,7 @@
 package utils;
 
+import com.github.javafaker.Faker;
+
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
@@ -8,6 +10,8 @@ import static java.util.stream.IntStream.range;
 
 
 public class RandomData {
+   static Faker faker = new Faker();
+
     public static int getRandomInt(int from, int to) {
         return ThreadLocalRandom.current().nextInt(from, to +1);
     }
@@ -47,6 +51,15 @@ public class RandomData {
         int index = getRandomInt(0, years.length - 1);
         String result = String.valueOf(years[index]);
         return result;
+    }
+    public static String getRandomUserName() {
+        String name = faker.name().username();
+        return name;
+    }
+    public static String getRandomPassword() {
+        String password = faker.internet().password();
+        return password;
+
     }
 }
 
